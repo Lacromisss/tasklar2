@@ -1,0 +1,46 @@
+using System;
+
+namespace ConsoleApp9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+
+            
+Console.WriteLine("girilecek sozu yaz: ");
+            
+string soz = Console.ReadLine().ToLower();//boyuk kicik herf problemi yasamamaq ucun bu metodu istifade eledim
+            
+            Console.WriteLine("bura bir herf yaz. yazdiqin herfden ne qeder varsa ekrana cixarilacaq: ");
+            
+char herf = char.Parse(Console.ReadLine().ToLower());
+            
+int sayac = 0;
+            
+
+
+
+for (int i = 0; i < soz.Length; i++)
+                
+{
+                
+if (soz[i] == herf)
+                    
+{
+                    
+                    sayac++;
+                    
+}
+                
+}
+            
+            
+            
+            
+            
+            Console.WriteLine(  sayac);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+using System;
+
+namespace ConsoleApp10
+{
+    internal class Program
+    {
+        static void Main()
+        {
+            
+            Console.Write("Arrayda ne qeder deyerler olsun?:");
+            int n = Int32.Parse(Console.ReadLine());
+            double[] dizi = new double[n];
+            int cemler = 0;
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                Console.Write("sayi {0}: ", i + 1);
+                dizi[i] = Convert.ToDouble(Console.ReadLine());
+                
+            }
+            foreach (int b  in dizi)
+            {
+                if (b % 3 == 0)
+                {
+                    cemler = cemler + b;
+                }
+            }
+            Console.WriteLine(cemler);//Bir array verilir həmin array içərisində 3-ə  tam bölünən ədədlərin cəmi tapılır
+
+        }
+
+
+
+
+
+
+
+    }
+}
